@@ -1,0 +1,136 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	font-family: 'Noto Sans', sans-serif;
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+body{
+	overflow-x:hidden;
+	background-color:#f2f2f2;
+}
+
+.margin-top{
+	margin-top:10vh;
+}
+h1,h2,h3,h4,h5,h6{
+	text-align:center;
+	font-family: 'Poppins', sans-serif;
+}
+p{
+	text-align:justify;
+	font-size:16px;
+}
+.pad-0{
+	padding:0;
+}
+.car-2{
+	width:35vw;
+}
+.pad-top{
+	margin-top:5vh;
+}
+.pic-car1{
+	
+}
+.meny-a:hover{
+	color:grey;
+}
+.car-2-img{
+	
+	width:100%;
+	
+}
+.parallax{
+	height:20vh;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	line-height: 20vh;
+}
+.parallaxH4{
+
+	font-size:30px;
+	text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;  
+    line-height: 20vh;
+}
+#parallax1{
+	background-image: url("../IMG/cityView.jpg");
+}
+#parallax2{
+	background-image: url("../IMG/alley.jpg");
+}
+#bildspel{
+	background-image: url("../IMG/gatulyckta_natt.jpg");
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:40vh;
+	padding-top:10vh;
+	text-align: center;
+	text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;  
+}
+#arrow-down{
+	font-size:25px;
+	color:white;
+	opacity:80%;
+}
+#arrow-down:hover{
+	opacity:100%;
+}
+.sm-none{
+	display:none;
+}
+.bilder{
+	max-height: 100vh;
+}
+/*col-md - medium*/
+@media only screen and (min-width:768px){
+	.car-2{
+		width:40vw;
+	}
+	.car-2-img{
+		height:65%;
+		width:22.5vw;
+	}
+	.sm-none{
+		display:block;
+	}
+	.parallaxh4{
+		font-size:40px;
+	}
+	#bildspel{
+		height:60vh;
+		padding-top:25vh;
+	}
+	p{
+		font-size:12px;
+	}
+}
+/*col-lg - large*/
+@media only screen and (min-width:992px){
+	.sm-none{
+		display:block;
+	}
+	.parallaxh4{
+		font-size:50px;
+	}
+	#bildspel{
+		height:91vh;
+		padding-top:50vh;
+	}
+	p{
+		font-size:16px;
+	}
+}

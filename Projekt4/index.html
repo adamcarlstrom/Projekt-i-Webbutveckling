@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>Hållbart Samhälle - Hem</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./CSS/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- ikoner --> 
+	<script type="text/javascript" src="./JS/index.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@800&display=swap" rel="stylesheet"> <!-- Fonts-->
+</head>
+<body>
+		<!--hamburgarmeny -->
+	<nav id ="nav" class="navbar navbar-expand-lg bg-white">
+		<a href="" class="navbar-brand">Projekt Hållbart Samhälle</a>
+		
+		<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon fas fa-bars" id="hamburger"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse " id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<a  id="homeI" class="nav-link active text-dark" href="./index.html">
+				              <span class = "fa fa-home"></span>
+				        </a>
+				</li>
+				<li class="nav-item">
+					<a href="./HTML/losning.html" class="nav-link">Lösning</a>
+				</li>
+				<li class="nav-item">
+					<a href="./HTML/diskussion.html" class="nav-link">Diskussion</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+		<!--carrousell med bilder om projektet -->
+	<div class="carousell-div" id="bildspel">
+				
+		<h1 >Ett Tryggare Nacka</h1>
+		<h6 >
+			En Förbättrad Kommun
+		</h6>
+
+		<!--	pil för att komma ner till text 	-->
+		<a class="fas fa-chevron-down" id="arrow-down" href="#row2"></a>
+	</div>
+	<!--carrousell med kort av bildmedlemmar -->
+	<div class="row" id="row2">
+	<div class="col-lg-3 col-md-4 col-sm-12 pad-top ">
+		<div class="col-lg-12 col-sm-6 col-md-10 container rounded">
+					
+					
+			<div id="car2" class="carousel slide" data-ride="carousel">
+
+			  <!-- Indicators -->
+			  <ul class="carousel-indicators ">
+			    <li data-target="#car2" data-slide-to="0" class="bg-secondary active "></li>
+			    <li data-target="#car2" data-slide-to="1" class="bg-secondary"></li>
+			    <li data-target="#car2" data-slide-to="2" class="bg-secondary"></li>
+			    <li data-target="#car2" data-slide-to="3" class="bg-secondary"></li>
+			    <li data-target="#car2" data-slide-to="4" class="bg-secondary"></li>
+			  </ul>
+
+			  <!-- The slideshow -->
+			 <div class="carousel-inner">
+
+			    <div class="carousel-item active">
+			    	<div class="card container pad-0 car-2 ">
+						<img src="./IMG/theo.jpg" class="card-img-top  car-2-img" alt="theo">
+						<div class="card-body">
+							<p>Theo Dalström - <br>
+							TT20b</p>
+						</div>
+					</div>
+			  	</div>
+
+			    <div class="carousel-item">
+			      <div class="card container pad-0 car-2">
+						<img src="./IMG/markus.jpg" class="card-img-top img-fluid car-2-img" alt="markus">
+						<div class="card-body">
+							<p>Markus Wendt -  <br>
+							TT20b</p>
+						</div>
+					</div>
+			  </div>
+
+			    <div class="carousel-item">
+			     <div class="card container pad-0 car-2 ">		
+			     	<img src="./IMG/oscar.jpg" class="card-img-top img-fluid car-2-img" alt="oscar">
+						<div class="card-body">
+							<p>Oscar Rhenberg -  <br>
+							TT20b</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+			     <div class="card container pad-0 car-2">
+			     	<img src="./IMG/adam.jpg" class="card-img-top img-fluid car-2-img" alt="adam">
+						<div class="card-body">
+							<p>Adam Carlström - <br>
+							TDI20b</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+			     <div class="card container pad-0 car-2">
+			     	<img src="./IMG/assar.jpg" class="card-img-top img-fluid car-2-img" alt="assar">
+						<div class="card-body">
+							<p>Assar Jacobsson - <br>
+							TDI20b</p>
+						</div>
+					</div>
+				</div>
+
+			   </div>
+
+			  <!-- Left and right controls -->
+			  <a class="carousel-control-prev" href="#car2" data-slide="prev">
+			    <span class="carousel-control-prev-icon bg-secondary"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#car2" data-slide="next">
+			    <span class="carousel-control-next-icon bg-secondary"></span>
+			  </a>
+
+			</div>
+
+
+			</div>
+		</div>
+	
+
+		<div class="col-lg-9 col-md-8 col-sm-12 pad-top">
+			<div class="col-lg-12 col-sm-12 col-md-12 container bg-white p-5 rounded ">
+				<h4>
+					Introduktion
+				</h4>
+
+				<p>
+					Gruppdeltagarna som har varit med och jobbat med projektet “Nacka som världens tryggaste stad” heter Theo Dalström (TT), Markus Wendt (TT), Oscar Rehnberg (TT), Adam Carlström (TDI) och Assar Jacobsson (TDI).
+
+				</p>
+				<p>
+					Anledning till att vi valde att arbete med detta område är att vi alla finner tryggheten i Nacka som ett problem som behöver lösas. Det finns vissa områden i Nacka där man kan känna sig osäker. Detta är något vi inte tycker är bra och vill därför skapa en lösning till problemet så att alla invånare i Nacka ska kunna känna sig säkra var de än är.
+
+				</p>
+			</div>
+		</div>
+	</div>
+		
+		<div class=" row pad-top">
+			
+			<div class="col-12 parallax" id="parallax1">
+				<h4 class="parallaxH4">
+					Bakgrund
+				</h4>
+			</div>
+
+			<div class="row bg-white">		
+
+				<div class="col-sm-12 col-md-6 col-lg-8 container bg-white p-5 rounded ">
+				<h5>Hur ser läget ut idag?</h5>
+				<p>
+					Enligt lokaltidningen “Mitt i Nacka/Värmdö” (2017), så är centrumområden såsom Orminge, Fisksätra, Älta och centrala Nacka utsatta för våldsbrott. I just de här fyra centrumområdena har under de senaste åren 194 fall av misshandel, 31 rån och fyra våldtäkter eller våldtäktsförsök anmälts. Brott som dessa utförs inte på dagarna, det är de senare kvällarna, som är ett problem. Enligt “Nacka Värmdö Posten” (2017), så är Nacka absolut inte ett enormt problemområde där brott är vardag. Det finns dock fortfarande problem som behöver tas tag i: Droganvändning, skadegörelse, inbrott, sexuellt ofredande osv är brott som ses som problem. Orminge och Fisksätra är områden som sticker ut. Socialdemokraterna (2020) skriver att “Nacka fortsätter toppa listan över unga som använder droger, Samtidigt ökar kriminell verksamhet och våldsdåd i samhället. Polisen ser ett samband mellan våldsdåden och illegala verksamheter, såsom drogförsäljning”. Detta visar att brott som nämnts ovan är på uppgång, något som snabbt borde tas tag i innan situationen eskalerar. 
+
+				</p>
+				<p>
+					Nacka har alltså inte varit något problemområde där många brott begåtts, dock visar nya studier att ett trygghetsproblem är något som är på uppgång. Därför krävs det att Nacka kommun skapar en lösning så att invånarna kan känna sig tryggare i kommunen de bor i.
+
+				</p>
+
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 ">
+					<img src="./IMG/woman.jpg" class="img-fluid float-right sm-none bilder" alt="woman">
+				</div>	
+					
+			</div>
+		</div>
+
+
+		<div class="row pad-top">
+			
+			<div class="col-12 parallax" id="parallax2">
+				<h4 class="parallaxH4">
+					Problemformulering
+				</h4>
+			</div>
+
+			<div class="row bg-white">
+				<div class="col-lg-4 col-md-6">
+					<img src="./IMG/gatulyckta.jpg" class="img-fluid sm-none bilder" alt="gatulyckta">
+				</div>			
+
+				<div class="col-sm-12 col-md-6 col-lg-8 container p-5 rounded ">
+				<h5>Vad ska vår produkt lösa?</h5>
+				<p>
+					Problemet vi försöker lösa handlar om att invånarna i Nacka känner sig otrygga under kvällarna och nätterna vid olika platser i Nacka. Detta handlar om platser som Fisksätra och Orminge som enligt vår egen enkät visat sig vara platser där de flesta känner sig minst säkra. Lösningen vi skapar måste alltså se till att invånarna känner sig säkrare vid platser som dessa under nätterna. Ifall lösningen fungerar som den ska så ska invånarna våga vistas utomhus vid områden som vid dagsläget ses som “mindre säkra” under sena kvällar utan att behöva vara rädda eller känna sig otrygga.
+				</p>
+
+				</div>
+			</div>
+		</div>
+
+
+	<div class="footer col-12 pad-top bg-white">
+		Bilder av 
+		Manolo Franco, enriquelopezgarre, An Le, StockSnap, Free-Photos, rgaudet17, epicioci, Carola68, PublicDomainPictures, Designer-Obst, wfeco77 och Marcos_Dgraphic
+		från pixabay
+	</div>
+	
+</body>
+</html>
