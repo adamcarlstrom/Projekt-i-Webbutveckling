@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Attacker Projekt 2 AC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/attacker.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Teko:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+	<header id="header">
+		<h1>Attacker</h1>
+		<h3>DDos attacker, Clickjacking och Cross-site scripting</h3>
+	</header>
+	<section id="sec1">
+		<h4>
+			DDos attacker
+		</h4>
+		<p>
+			DDos står för “distributed denial of service” och inom datasäkerhet så är en attack mot ett datasystem som kan vara riktat mot ett nätverk, en webbplats eller ett datorsystem. Man brukar kalla det för en överbelastningsattack. Den här typen av attacker slår hårt mot drabbade företag, banker och nätbutiker. Det finns runt 25 olika DDoS attacker men de två vanligaste är applikations attacker och flödes attacker vilket är två bandbredds förbrukande tekniker. Flödes Attacker är den vanligaste, det fungerar genom att ett stort antal av datorer angriper ett system med IP-trafik. Vid en applikation attack så används olika typer av agenter för att sända meddelanden som skickas till alla system som ingår i ett subnät.  Några kända attacker är det mot riksdagsvalet 2018,  men också företag som paypal, amazon och Telia. DDos attacker är inget nytt utan det är en attacktyp som har använts länge, antalet attacker ökar och det mindre webbplatser har chans att bli attackerade. Det har också blivit mycket enklare att utföra en attack då man kan köpa tjänsten via olika webbplatser. 
+		</p>
+	</section>
+	<section id="sec2">
+		<h4>
+			Clickjacking
+		</h4>
+		<p>
+			Clickjacking är en typ av “scam” där en gärningsman sätter upp en gömd hemsida och lurar användaren att klicka på en gömd knapp som gör något annat än vad det ser ut som. På knappen kan det stå saker som “claim your reward” eller liknande medans det är egentligen en länk till en bank hemsida där användaren tvingas logga in. När användaren har loggats in så har gärningsmannen alla användarens bankuppgifter och kan ta pengar från deras bankkonto. Clickjacking kan göras på en mängd olika sätt där det vanligaste taktiken är genom att använda sig av iframes. Iframe är en HTML-tagg som gör att du kan öppna en hemsida inuti en annan hemsida. Det här betyder att en hacker kan få dig att klicka på en länk, i en iframe, som egentligen har ett element han gömt framför den antingen med CSS eller med javascript. För att skydda sig mot flera former av clickjacking kan du göra allt från extrema, paranoida åtgärder som att stänga av javascript i din webbläsare helt, till lätta saker som att kolla länkar du går in på eller installera ett tillägg som blockerar iframe taggen från att ladda. Men detta går även att göra från server-sidan också med javascript snippeten Framekiller som också blockerar iframes från att ladda men från server-sidan.
+
+		</p>
+	</section>
+	<section id="sec3">
+		<h4>
+			Cross-site scripting
+		</h4>
+		<p>
+			Enligt one.com är ett annat stort hot mot hemsidor idag cross-site scripting. Detta hot används av hackers för att gå runt olika säkerhetsfunktioner genom att sätta in skadlig kod på din hemsida. Man kan dock motverka detta problem och enligt one.com har många stora företag bug-bounty.program med detta syfte. Ett bug bounty program är ett initiativ som låter privatpersoner försöka hacka sidor för att visa vilka delar av sidan som går att utnyttja och hur man kan fixa det. Stora sådana program kan hjälpa företag att bli av med massor av kryphål väldigt snabbt. 
+		</p>
+	</section>
+	</div>
+	<nav class="link">
+		<a href="../HTML/lagar.html" class="menytagg lagar">Lagar</a>
+		<hr>
+		<a href="../index.html" class="menytagg hem">Hem</a>
+		<hr>
+		<a href="../HTML/sakerhet.html" class="menytagg sakerhet">Säkerhet</a>
+		<hr>
+		<a href="../HTML/staten.html" class="menytagg staten">Staten</a>
+		<hr>
+		<a href="../HTML/tredje.html" class="menytagg tredje">Tredjepartskod</a>			
+		<hr>
+		<a href="../HTML/webbhotell.html" class="menytagg webbhotell">Webbhotell</a>
+	</nav>
+	<aside class="link">
+		<a href="#sec1" class="aside">DDos</a>
+		<hr>
+		<a href="#sec2" class="aside">Click</a>
+		<hr>
+		<a href="#sec3" class="aside cross">Cross-site</a>
+	</aside>
+	<div id="dropdown">
+		<span>
+			Meny
+		</span>
+		<div id="dropdown-content">
+		<a href="../HTML/lagar.html" class="menytagg lagar">Lagar</a>
+		<hr>
+		<a href="../index.html" class="menytagg hem">Hem</a>
+		<hr>
+		<a href="../HTML/sakerhet.html" class="menytagg sakerhet">Säkerhet</a>
+		<hr>
+		<a href="../HTML/staten.html" class="menytagg staten">Staten</a>
+		<hr>
+		<a href="../HTML/tredje.html" class="menytagg tredje">Tredjepartskod</a>			
+		<hr>
+		<a href="../HTML/webbhotell.html" class="menytagg webbhotell">Webbhotell</a>
+		</div>
+	</div>
+</body>
+</html>

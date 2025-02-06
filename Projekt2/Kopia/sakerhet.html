@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<title>Säkerhet Projekt 2 AC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="sakerhet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Teko:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+	<header id="header">
+		<h1>Säkerhet</h1>
+		<h3>Skydd av Lösenord, SSL-certifikat, RSA kryptering</h3>
+	</header>
+	<section id="sec1">
+		<h4>
+			Skydd av Lösenord
+		</h4>
+		<p>
+			Ifall man sätter upp en hemsida där användaren ska kunna registrera sig och ha en profil måste de kunna logga in på något sätt. För att göra detta så behöver användaren oftast bara skriva in sitt användarnamn och lösenord. Men som ägaren av hemsidan har man extremt stort ansvar för att se till att användarnas uppgifter och data inte hamnar i fel händer. Det enklaste sättet att spara datan är genom att spara det i plaintext på en oenkrypterad hårddisk. Detta är dock det mest osäkra sättet också då vem som helst med antingen fjärranslutning eller fysisk tillgång till servern kunna komma åt allas data och uppgifter på hemsidan. Plaintext är precis som det låter från engelskan, “plain text”. Detta är vanlig text som inte ändrats på något sätt som gör det lätt att läsa. Detta gör dock så att det är väldigt osäkert att spara viktig information inom plaintext som är varför enkryption och hashning är så viktigt. 
+		</p>
+		<p>
+			Enkryption är ett sätt att sätta information som bara den med koden kan titta på. Enkryption låser alltså en normal plaintext fil så att inte hackers och andra tredje partier kan komma åt den. 
+		</p>
+		<p>
+			Hashning fungerar väldigt annorlunda från encryption eftersom encryption kräver att webbservers ägare fortfarande har filen någonstans medans med hashning sparar hemsidan egentligen aldrig ditt lösenord. Istället för att spara lösenordet så översätter hemsidan ditt lösenord till en checksum. Detta innebär att varje program, fil och lösenord vare-sig hur långt som eller kort har en specifik checksum. Anledningen till att hashning är säkert är för att det inte går att göra den omvända funktionen av en hashning, alltså att ta en hash till plaintext. Detta gör dessutom så att ägaren av hemsidan inte ens vet vad användarnas lösenord kan vara. Om en hacker skulle lyckas få tag på ens hash kan man tro att det inte går att göra någonting med den. Han kan inte översätta tillbaks den eller logga in på ens konton men hackern kan lista ut lösenordet. Detta görs genom att hackern har en lista av hashes som jämförs med ens egna hash kombination. På så sätt kan hackern jämföra din hash mot redan översatta lösenord i plaintext och få reda på ens lösenord.
+		</p>
+	</section>
+	<section id="sec2">
+		<h4>
+			SSL-certifikat
+		</h4>
+		<p>
+			Secure Socket Layer är en säkerhetsmekanism som utvecklades av Netscape i 1994 för att kryptera data som skickas mellan två enheter. Tanken bakom att kryptera datan är för att ingen obehörig på internet ska kunna avlyssna eller manipulera informationen. Det finns tre olika typer av certifikat, Domän Validerade (DV), organisations validerande (OV) och certifikat med utökad validering (EV). 
+		</p>
+		<p>
+			Domänvalidering (DV) innebär att det endast en kontroll görs av att den som söker certifikatet har kontroll över domännamnet. 
+		</p>
+		<p>
+			Organisationsvalidering (OV) är den vanligaste typen av SSL-certifikat och innebär att det även görs en kontroll av företagets eller organisationens uppgifter. 
+		</p>
+		<p>
+			EV-certifikat är en typ av certifikat med en hög nivå av kontroll vid utfärdandet. Det är vanligt att internetbanker använder denna typ av certifikat. Med ett EV-certifikat lyser företagets namn grönt i webbläsarens adressrad, vilket gör det lätt för besökare verifiera att hen besöker rätt hemsida. 
+		</p>
+		<p>
+			SSL använder sig av flera olika krypteringsmetoder som t.e.x Data Encryption Standard (DES), Message-Digest algorithm 5 (MD5) och Rivest-Shamir-Adleman (RSA). SSL har dock numera ersatts av TLS. TLS eller transport Layer Security är endast en vidareutveckling på version 3 av SSL och utvecklades för att fixa de problem som fanns med SSL.
+		</p>
+	</section>
+	<section id="sec3">
+		<h4>
+			RSA kryptering
+		</h4>
+		<p>
+			RSA eller Rivest-Shamir-Adleman är en av de mest kända krypteringsalgoritmen som finns och utvecklades 1977 av Ron Rivest, Adi Shamir och Len Adleman. RSA var en av de första krypteringsalgoritmen som använde sig av asymmetrisk kryptering. Det betyder Innebär att man använder sig av två nycklar för att kryptera och dekryptera meddelanden. Den ena nyckel kallas för den offentliga nyckeln och den används för att kryptera. Den andra nyckel kallas för den hemliga nyckeln och den används för att dekryptera. Dessa nycklar som används är stora primtal. 
+		</p>
+	</section>
+	</div>
+	<nav class="link">
+		<a href="lagar.html" class="menytagg attacker">Lagar</a>
+		<hr>
+		<a href="attacker.html" class="menytagg attacker">Attacker</a>
+		<hr>
+		<a href="index.html" class="menytagg hem">Hem</a>
+		<hr>
+		<a href="staten.html" class="menytagg staten">Staten</a>
+		<hr>
+		<a href="tredje.html" class="menytagg tredje">Tredjepartskod</a>			
+		<hr>
+		<a href="webbhotell.html" class="menytagg webbhotell">Webbhotell</a>
+	</nav>
+	<aside class="link">
+		<a href="#sec1" class="aside" id="small">Lösenord</a>
+		<hr>
+		<a href="#sec2" class="aside">SSL</a>
+		<hr>
+		<a href="#sec3" class="aside">RSA</a>
+	</aside>
+	<div id="dropdown">
+		<span>
+			Meny
+		</span>
+		<div id="dropdown-content">
+		<a href="lagar.html" class="menytagg attacker">Lagar</a>
+		<hr>
+		<a href="attacker.html" class="menytagg attacker">Attacker</a>
+		<hr>
+		<a href="index.html" class="menytagg hem">Hem</a>
+		<hr>
+		<a href="staten.html" class="menytagg staten">Staten</a>
+		<hr>
+		<a href="tredje.html" class="menytagg tredje">Tredjepartskod</a>			
+		<hr>
+		<a href="webbhotell.html" class="menytagg webbhotell">Webbhotell</a>
+		</div>
+	</div>
+</body>
+</html>
