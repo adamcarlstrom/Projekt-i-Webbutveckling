@@ -1,0 +1,300 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color:#F9F9EC;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+header{
+	text-align:center;
+	grid-area:header;
+	background-color:#4B8EC4;
+	overflow:hidden;
+}
+h1{
+	padding-top:0;
+	font-size:240%;
+}
+nav{
+	grid-area:nav;
+	background-color:#DCE7F5;
+	overflow:hidden;
+	text-align:center;
+}
+#info{
+	text-align:center;
+	display:inline-block;
+}
+#navB{
+	background-color:grey;
+	text-align:center;
+	display:inline-block;
+	margin-left:2vw;
+	margin-top:0;
+}
+#navD{
+	position:absolute;
+	top:19%;
+	bottom:45%;
+	left:5%;
+	right:55%;
+	z-index:2;
+	background-color:#DCE7F5;
+	font-size:85%;
+	padding:1em;
+	text-align:left;
+	border:solid 2px #2B65E3;
+}
+#text{
+	display:none;
+}
+.navP{
+	font-size:90%;
+}
+aside{
+	grid-area:aside;
+	background-color:#DCE7F5;
+	overflow:auto;
+}
+#asideD{
+	position:absolute;
+	top:19%;
+	bottom:30%;
+	left:55%;
+	right:5%;
+	z-index:2;
+	background-color:#DCE7F5;
+	font-size:100%;
+	padding:1em;
+	text-align:left;
+	overflow-y: auto;
+	border:solid 2px #2B65E3;
+}
+h4{
+	text-align:left;
+}
+#asideH3{
+	text-align:left;
+	padding:0.25em;
+}
+section{
+	grid-area:section;
+	background-color:#4B8EC4;
+	margin-right:2vw;
+	margin-left:2vw;
+}
+img{
+	height:27%;
+	width:25%;
+	opacity:70%;
+}
+h2{
+	padding-top:3vh;
+	font-size:400%;
+	text-decoration: underline;
+	text-align:center;
+}
+#secP{
+	padding-left:10vw;
+	padding-right:10vw;
+	text-align:center;
+}
+footer{
+	grid-area:footer;
+	background-color:#4B8EC4;
+}
+#nav1{
+	position:absolute;
+	top:0.5vh;
+	left:0.5vw;
+	right:93%;
+	bottom:92.5%;
+	overflow: hidden;
+}
+#hem{
+	height:100%;
+	width:100%;
+	z-index:4;
+	opacity:100%;
+}
+
+/* Mobil */
+#container{
+	display:grid;
+	grid-template-areas:
+	"header header"
+	"nav aside"
+	"section section"
+	"footer footer";
+	grid-template-rows:1fr 1fr 8fr 1fr;
+	grid-template-columns:1fr 1fr;
+	grid-row-gap:2vh;
+	grid-column-gap:1vw;
+	width:100vw;
+	height:100vh;
+}
+
+/* Tablet */
+@media only screen and (min-width:600px){
+	#container{
+		display:grid;
+		grid-template-areas:
+		"header header"
+		"section nav"
+		"section aside"
+		"section ."
+		"footer footer";
+		grid-template-rows:1fr 5fr 1.5fr 4fr 1fr;
+		grid-template-columns:3fr 1fr;
+		grid-row-gap:2vh;
+		grid-column-gap:1vw;
+		width:100vw;
+		height:100vh;
+	}
+	header{
+		padding:0;
+		font-size:65%;
+	}
+	nav{
+		overflow: auto;
+		text-align:left;
+	}
+	#info{
+		text-align:center;
+		display:block;
+	}
+	#text{
+		display:block;
+	}
+	#navB{
+		display:none;
+	}
+	#navD{
+		display:none;
+	}
+	.navP{
+		display:block;
+		padding:0.5em;
+		text-align:left;
+		font-size:70%;
+	}
+	#nav1{
+		position:absolute;
+		top:0.5vh;
+		left:0.5vw;
+		right:95%;
+		bottom:93.5%;
+		overflow: hidden;
+	}
+	h2{
+		padding-top:8vh;
+		font-size:400%;
+		text-decoration: underline;
+	}
+	#secP{
+		padding-left:10vw;
+		padding-right:10vw;
+	}
+	#asideD{
+		position:absolute;
+		top:60%;
+		bottom:0%;
+		left:72.5%;
+		right:0;
+		z-index:2;
+		font-size:100%;
+		padding:1em;
+		text-align:left;
+	}
+}
+
+/* Dator */
+@media only screen and (min-width:769px){
+	#container{
+		display:grid;
+		grid-template-areas:
+		"header header header"
+		"nav section aside"
+		"nav section ."
+		". section ."
+		"footer footer footer";
+		grid-template-rows:2fr 3fr 10fr 0.5fr 1fr;
+		grid-template-columns:1.5fr 6fr 1fr;
+		grid-row-gap:2vh;
+		grid-column-gap:0.5vw;
+		height:100vh;
+		width:100vw;
+	}
+	h1{
+		font-size:270%;
+		padding:1vh;
+	}
+	nav{
+		margin:0;
+		padding:0;
+		overflow-y:auto;
+		text-align:left;
+	}
+	#info{
+		text-align:center;
+		font-size:120%;
+		display:block;
+	}
+	#text{
+		display:block;
+	}
+	#navB{
+		display:none;
+	}
+	#navD{
+		display:none;
+	}
+	.navP{
+		display:block;
+		padding:0.5em;
+		text-align:left;
+		font-size:90%;
+	}
+	#nav1{
+		position:absolute;
+		top:1vh;
+		left:0.5vw;
+		right:93%;
+		bottom:90%;
+		overflow: hidden;
+	}
+	h2{
+		padding-top:8vh;
+		font-size:400%;
+		text-decoration: underline;
+	}
+	#secP{
+		padding-left:12vw;
+		padding-right:12vw;
+	}
+	aside{
+		margin-right:1vw;
+		padding:0;
+	}
+	#asideD{
+		position:absolute;
+		top:30%;
+		bottom:20%;
+		left:85%;
+		right:0;
+		z-index:2;
+		font-size:100%;
+		padding:1em;
+		text-align:left;
+	}
+}

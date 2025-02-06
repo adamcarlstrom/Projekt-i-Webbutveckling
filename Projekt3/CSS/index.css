@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color:#F9F9EC;
+}
+header{
+	grid-area:header;
+	background-color:#4B8EC4;
+	text-align:center;
+}
+section{
+	grid-area:section;
+	background-color:#DCE7F5;
+	text-align:center;
+}
+aside{
+	grid-area:aside;
+	background-color:#DCE7F5;
+	text-align:center;
+}
+footer{
+	grid-area:footer;
+	background-color:#4B8EC4;
+}
+nav{
+	margin-left:5vw;
+	margin-right:5vw;
+	text-align:center;
+	border:solid 2px #2B65E3;
+	background-color:#4B8EC4;
+	font-size:120%;
+}
+a:hover{
+	color:red;
+}
+a:active{
+	color:red;
+}
+a:link{
+	color:black;
+}
+
+#nav1{
+	grid-area:nav1;
+}
+#nav2{
+	grid-area:nav2;
+}
+.spela{
+	text-decoration:underline;
+	padding-left:10vw;
+	padding-right:10vw;
+}
+.info{
+	padding-top:0.5em;
+	padding-left:2em;
+	padding-right:2em;
+	text-align:left;
+	font-size:120%;
+}
+.sec{
+	margin:0;
+	border:solid 2px #2B65E3;
+	text-align:left;
+}
+.a{
+	font-size:200%;
+}
+
+/*mobil*/
+div{
+	display:grid;
+	grid-template-areas:
+	"header header"
+	"nav1 nav2"
+	"section section"
+	"aside aside"
+	"footer footer";
+	grid-template-rows:1fr 1fr 10fr 10fr 0.5fr;
+	grid-template-columns:1fr 1fr;
+	height:200vh;
+	width:100%;
+	grid-gap:5vh;
+}
+
+/*tablet*/
+@media only screen and (min-width:600px){
+	div{
+		display:grid;
+		grid-template-areas:
+		"header header"
+		"nav1 nav2"
+		"section section"
+		"aside aside"
+		"footer footer";
+		grid-template-rows:1fr 1fr 10fr 10fr 0.5fr;
+		grid-template-columns:1fr 1fr;
+		height:200vh;
+		width:100%;
+		grid-gap:5vh;
+	}
+	.sec{
+		margin-left:5vw;
+		margin-right:5vw;
+	}
+}
+
+/*dator*/
+@media only screen and (min-width:769px){
+	div{
+		display:grid;
+		grid-template-areas:
+		"header header"
+		"section nav1"
+		"section nav2"
+		"section ."
+		"aside ."
+		"footer footer";
+		grid-template-rows:0.25fr 0.25fr 0.25fr 0.7fr 2fr 0.1fr;
+		grid-template-columns:5fr 1fr;
+		height:180vh;
+		width:100%;
+	}
+	.spela{
+		padding-left:6vw;
+		padding-right:6vw;
+	}
+	nav{
+		margin-bottom:5vh;
+	}
+	.sec{
+		margin-left:2vw;
+		margin-right:2vw;
+	}
+}
